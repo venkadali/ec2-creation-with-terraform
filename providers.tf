@@ -1,0 +1,10 @@
+terraform {
+    required_providers {
+        aws = "~> 3.0"
+    }
+}
+
+# Configure the AWS provider
+provider "aws" {
+    region = "us-east-1"
+}

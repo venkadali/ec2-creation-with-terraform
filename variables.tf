@@ -1,5 +1,5 @@
 variable "region" {
-    default = "us-east-1"
+    default = "ap-south-1"
 }
 
 variable "vpc_cidr_block" {
@@ -8,7 +8,7 @@ variable "vpc_cidr_block" {
 }
 
 variable "subnet_cidr_block" {
-    default = "10.0.100.0/24"
+    default = "10.0.1.0/24"
     description = "The CIDR block for the IPs in the subnet"
 }
 
@@ -18,7 +18,7 @@ variable "unrestricted_cidr_block" {
 }
 
 variable "availability_zone" {
-  default = "us-east-1a"
+  default = "ap-south-1a"
 }
 
 variable "cidr_ssh_allowed" {
@@ -32,7 +32,7 @@ variable "ec2_instance_type" {
 
 variable "ec2_ami" {
     # default = "ami-0bcc094591f354be2" # non free tier
-    default = "ami-0bcc094591f354be2" # free tier
+    default = "ami-090f920d1b48d8c81" # free tier
 }
 
 variable "ssh_key" {
